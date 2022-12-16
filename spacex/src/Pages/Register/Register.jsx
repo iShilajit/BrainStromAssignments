@@ -33,9 +33,9 @@ export const Register = () => {
     }
   };
   return (
-    <Box justify="center">
+    <Box justify="center"  >
       <Flex
-        position={"absolute"}
+       
         top="100px"
         justify="center"
         align="center"
@@ -44,11 +44,12 @@ export const Register = () => {
         w={{sm:"80%", md:"50%" , lg:"32%"}}
         m={"auto "}
         padding="13px 20px"
+       
         h="500px"
-        boxShadow="rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px"
+        
       >
         <form>
-          <Text fontSize={"30px"} color="gray.900" m="0">
+          <Text fontSize={"30px"} color="white.900" mt="150">
             Register
           </Text>
           <FormLabel m="15px 0 0 50px" htmlFor="text">
@@ -76,10 +77,7 @@ export const Register = () => {
             value={inputData.email}
             onChange={(e) => handleInput(e)}
           />
-          <select onChange={(e) => handleInput(e)}>
-            <option vlaue="admin">Admin</option>
-            <option value="user">Content Writer</option>
-          </select>
+      
           <FormLabel m="15px 0 0 50px" htmlFor="text">
             Password
           </FormLabel>
@@ -102,11 +100,11 @@ export const Register = () => {
                 "0 0 1px 2px rgba(88, 144, 255, .75), 0 1px 1px rgba(0, 0, 0, .15)",
             }}
             transform="scale(0.98)"
-            background="#000000"
+            background="#fff"
             width="300px"
             _hover={{
-              bg: "#f5f6f7",
-              background: "gray.600",
+              bg: "#fff",
+              background: "red.600",
               transform: "scale(0.98)",
               color: "white",
             }}

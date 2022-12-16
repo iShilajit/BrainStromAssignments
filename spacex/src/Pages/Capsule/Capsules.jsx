@@ -21,7 +21,7 @@ export const Capsules = () => {
   return (
     <>
       <SimpleGrid
-        position={"absolute"}
+        position={"relative"}
         top="90px"
         columns={{ base: 1, md: 2, lg: 3 }}
         spacing={6}
@@ -45,9 +45,9 @@ export const Capsules = () => {
                 src="https://cloudfront-us-east-2.images.arcpublishing.com/reuters/TXDGVXPBEVMY5PA2RHRF2EA25Y.jpg"
                 alt="error_image"
               />
-              <p>{e.capsule_id}</p>
-              <p>{e.details}</p>
-              <p>{e.status}</p>
+              <p>ID: {e.capsule_id}</p>
+              <p>Details :{e.details}</p>
+              <p>Status : {e.status}</p>
               <Button
                 onClick={() => {
                   setIsOpen(true);
